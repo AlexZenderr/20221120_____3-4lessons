@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск</title>
+</head>
+
+<body>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="post">
+
+    <h1>Поиск авто</h1>
+
+    <fieldset>
+      <legend>Укажите критерии поиска авто</legend>
+      <div>
+        <label for="bodytype">Тип кузова</label>
+        <select name="bodytype" id="bodytype">
+          <option value="" disabled>Сделайте выбор</option>
+          <option value="sedan">Седан</option>
+          <option value="hatchback">Хэтчбек</option>
+          <option value="suv">Внедорожник</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Марка авто</legend>
+      <div>
+        <label for="brand">Марка авто</label>
+        <select name="brand" id="brand">
+          <option value="" disabled>Сделайте выбор</option>
+          <option value="bmw">BMW</option>
+          <option value="mercedes">Mercedes-Benz</option>
+          <option value="chevrolet">Chevrolet</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Страна производитель</legend>
+      <div>
+        <label for="country">Страна производитель</label>
+        <select name="country" id="country">
+          <option value="" disabled>Сделайте выбор</option>
+          <option value="ukraine">Украина</option>
+          <option value="germany">Германия</option>
+          <option value="england">Англия</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Цена</legend>
+      <div>
+        <label for="price">Цена</label>
+        <select name="price" id="price">
+          <option value="" disabled>Сделайте выбор</option>
+          <option value="from5to10">От 5000$-10000$</option>
+          <option value="from10to15">10000$-15000$</option>
+          <option value="higherthan15">15000$ и выше</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Год выпуска</legend>
+      <div>
+        <label for="year">Год выпуска</label>
+        <select name="year" id="year">
+          <option value="" disabled>Сделайте выбор</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Состояние</legend>
+      <div>
+        <label for="wasincaraccid">Был в ДТП</label>
+        <input type="checkbox" name="wasincaraccid" id="wasincaraccid">
+      </div>
+      <div>
+        <label for="lilproblem">Не был в дтп, небольшие повреждения</label>
+        <input type="checkbox" name="lilproblem" id="lilproblem">
+      </div>
+      <div>
+        <label for="new">С салона</label>
+        <input type="checkbox" name="new" id="new">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Тип топлива</legend>
+      <div>
+        <label for="fuel">Тип топлива</label>
+        <select name="fuel" id="fuel">
+          <option value="" disabled>Сделайте выбор</option>
+          <option value="gasoline">Бензин</option>
+          <option value="diesel">Дизель</option>
+          <option value="gas">Газ</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Тип КПП</legend>
+      <div>
+        <label for="transmission">Тип КПП</label>
+        <select name="transmission" id="transmission">
+          <option value="" disabled>Сделайте выбор</option>
+          <option value="automatical">Автомат</option>
+          <option value="variator">Вариатор</option>
+          <option value="mechanical">Механика</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Цвет</legend>
+      <div>
+        <label for="color">Цвет</label>
+        <select name="color" id="color">
+          <option value="" disabled>Сделайте выбор</option>
+          <option value="black">Черный</option>
+          <option value="white">Белый</option>
+          <option value="blue-yellow">Сине-желтый</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Комфорт</legend>
+      <div>
+        <label for="leathersalon">Кожаный салон</label>
+        <input type="checkbox" name="leathersalon" id="leathersalon">
+      </div>
+      <div>
+        <label for="climatcontrol">Климат-контроль</label>
+        <input type="checkbox" name="climatcontrol" id="climatcontrol">
+      </div>
+      <div>
+        <label for="heatedseats">Подогрев сидений</label>
+        <input type="checkbox" name="heatedseats" id="heatedseats">
+      </div>
+      <div>
+        <label for="panoramicroof">Панорамная крыша</label>
+        <input type="checkbox" name="panoramicroof" id="panoramicroof">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Управление поиском</legend>
+      <div>
+        <input type="submit">
+        <input type="reset">
+      </div>
+    </fieldset>
+
+  </form>
+
+</body>
+
+</html>
